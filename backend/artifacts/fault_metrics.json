@@ -1,0 +1,104 @@
+{
+  "cv_accuracy": 0.936495791889824,
+  "cv_macro_f1": 0.8860111034980672,
+  "n_samples": 2614,
+  "n_files": 34,
+  "class_counts": {
+    "leak": 477,
+    "cavitation_overheat": 176,
+    "rotor_imbalance": 393,
+    "valve_in": 1263,
+    "valve_out": 305
+  },
+  "classification_report": {
+    "Закрытие входного клапана": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1263.0
+    },
+    "Закрытие выходного клапана": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 305.0
+    },
+    "Утечка / изменение уровня": {
+      "precision": 0.833941605839416,
+      "recall": 0.9580712788259959,
+      "f1-score": 0.8917073170731707,
+      "support": 477.0
+    },
+    "Дисбаланс ротора": {
+      "precision": 0.8307291666666666,
+      "recall": 0.811704834605598,
+      "f1-score": 0.8211068211068211,
+      "support": 393.0
+    },
+    "Кавитация / перегрев": {
+      "precision": 0.9122807017543859,
+      "recall": 0.5909090909090909,
+      "f1-score": 0.7172413793103448,
+      "support": 176.0
+    },
+    "accuracy": 0.936495791889824,
+    "macro avg": {
+      "precision": 0.9153902948520937,
+      "recall": 0.872137040868137,
+      "f1-score": 0.8860111034980672,
+      "support": 2614.0
+    },
+    "weighted avg": {
+      "precision": 0.9383428125455905,
+      "recall": 0.936495791889824,
+      "f1-score": 0.9343052232966733,
+      "support": 2614.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1263,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      305,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      457,
+      10,
+      10
+    ],
+    [
+      0,
+      0,
+      74,
+      319,
+      0
+    ],
+    [
+      0,
+      0,
+      17,
+      55,
+      104
+    ]
+  ],
+  "labels_order": [
+    "valve_in",
+    "valve_out",
+    "leak",
+    "rotor_imbalance",
+    "cavitation_overheat"
+  ],
+  "window": 30,
+  "stride": 5
+}

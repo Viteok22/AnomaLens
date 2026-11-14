@@ -211,7 +211,7 @@ anomalens/
 │   ├── package.json
 │   └── vite.config.js
 ├── data/skab/                   # 35 SKAB CSV
-├── data/custom/                 # 5 synthetic valve1 CSV
+├── data/custom/                 # synthetic + uploaded CSV
 ├── run.ps1
 ├── start.ps1
 ├── README.md
@@ -229,6 +229,9 @@ with the detector, ignores `anomaly/changepoint`, and starts 60 seconds before
 the first sustained alarm. This is the path for files with all-zero labels.
 
 ![Загрузка CSV без разметки](docs/upload-demo.png)
+
+Uploaded files are stored in `data/custom/`. Remove them before publishing if
+they contain sensitive production data.
 
 The folder already contains five synthetic `valve1` files. In the dashboard
 they appear as **«Синтетика · synthetic_valve1_*»**. Live and offline checks:
